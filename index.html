@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="DentalisRo: stomatologie modernă, fără stres. Prima consultație gratuită, programare online în 30 de secunde.">
+  <meta name="theme-color" content="#f5faf9">
+  <title>DentalisRo | Cabinet stomatologic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="logo" href="#acasa">Dentalis<span>Ro</span></a>
+    <nav id="nav" aria-label="Navigare principală">
+      <a href="#servicii">Servicii</a>
+      <a href="#preturi">Prețuri</a>
+      <a href="#echipa">Echipa</a>
+      <a href="#intrebari">Întrebări</a>
+      <a class="btn btn-small" href="#programare">Programează-te</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Deschide meniul" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero" id="acasa">
+      <div class="hero-copy">
+        <p class="eyebrow">Cabinet stomatologic</p>
+        <h1>Un zâmbet sănătos, <em>fără stres.</em></h1>
+        <p class="lead">Tratamente moderne, medici care îți explică fiecare pas și o clinică unde nu te grăbește nimeni. Prima consultație este gratuită.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#programare">Programează-te online</a>
+          <a class="btn btn-ghost" href="#servicii">Vezi serviciile</a>
+        </div>
+        <ul class="trust">
+          <li><b>15 ani</b> de experiență</li>
+          <li><b>Fără durere</b> anestezie modernă</li>
+          <li><b>Rate</b> fără dobândă</li>
+        </ul>
+      </div>
+
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="toothFill" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#ffffff"/>
+              <stop offset="1" stop-color="#d8ecea"/>
+            </linearGradient>
+            <radialGradient id="disc" cx="0.5" cy="0.4" r="0.7">
+              <stop offset="0" stop-color="#e9f6f4"/>
+              <stop offset="1" stop-color="#c9e7e4"/>
+            </radialGradient>
+            <path id="star" d="M0 -16 Q0 0 16 0 Q0 0 0 16 Q0 0 -16 0 Q0 0 0 -16Z"/>
+          </defs>
+
+          <g class="spin">
+            <circle cx="200" cy="200" r="190" fill="none" stroke="#0e7c86" stroke-width="1.5" stroke-dasharray="2 12" stroke-linecap="round"/>
+          </g>
+          <circle cx="200" cy="200" r="165" fill="url(#disc)"/>
+          <g class="spin-reverse">
+            <circle cx="200" cy="200" r="140" fill="none" stroke="#ffffff" stroke-width="3" stroke-dasharray="30 16" opacity="0.8"/>
+          </g>
+
+          <g class="float">
+            <path d="M200 90 C165 60 105 70 100 130 C97 175 120 205 130 255 C137 300 145 340 165 340 C185 340 185 285 200 285 C215 285 215 340 235 340 C255 340 263 300 270 255 C280 205 303 175 300 130 C295 70 235 60 200 90 Z" fill="url(#toothFill)" stroke="#a9d1ce" stroke-width="3" stroke-linejoin="round"/>
+            <path d="M138 112 C132 138 140 168 152 190" fill="none" stroke="#ffffff" stroke-width="10" stroke-linecap="round" opacity="0.9"/>
+          </g>
+
+          <use class="twinkle t1" href="#star" x="318" y="92" fill="#0e7c86"/>
+          <use class="twinkle t2" href="#star" x="78" y="300" fill="#0e7c86"/>
+          <use class="twinkle t3" href="#star" x="92" y="110" fill="#5fc0c2"/>
+          <use class="twinkle t2" href="#star" x="330" y="290" fill="#5fc0c2"/>
+        </svg>
+
+        <div class="badge badge-a"><b>4,9 ★</b> din 600 recenzii</div>
+        <div class="badge badge-b">Prima consultație <b>gratuită</b></div>
+      </div>
+    </section>
+
+    <section class="emergency">
+      <p><b>Durere de dinte?</b> Primim urgențe în aceeași zi.</p>
+      <a class="btn btn-light" href="tel:+40700000000">Sună acum: 0700 000 000</a>
+    </section>
+
+    <section class="stats" aria-label="Clinica în cifre">
+      <div><b class="count" data-count="15">0</b><span>ani de experiență</span></div>
+      <div><b class="count" data-count="12000">0</b><span>pacienți tratați</span></div>
+      <div><b class="count" data-count="3">0</b><span>medici specialiști</span></div>
+      <div><b class="count" data-count="98" data-suffix="%">0</b><span>pacienți mulțumiți</span></div>
+    </section>
+
+    <section class="section" id="servicii">
+      <div class="section-head reveal">
+        <p class="eyebrow">Servicii</p>
+        <h2>Tot ce ai nevoie, într-un singur loc</h2>
+      </div>
+      <div class="cards">
+        <article class="card reveal"><span class="num">01</span><h3>Stomatologie generală</h3><p>Consultații, plombe, detartraj și igienizare profesională.</p></article>
+        <article class="card reveal"><span class="num">02</span><h3>Estetică dentară</h3><p>Albire, fațete ceramice și remodelarea zâmbetului.</p></article>
+        <article class="card reveal"><span class="num">03</span><h3>Implantologie</h3><p>Implanturi dentare moderne, cu planificare digitală.</p></article>
+        <article class="card reveal"><span class="num">04</span><h3>Ortodonție</h3><p>Aparate dentare clasice și transparente, pentru toate vârstele.</p></article>
+        <article class="card reveal"><span class="num">05</span><h3>Stomatologie pentru copii</h3><p>Un cabinet prietenos, în care cei mici nu se tem.</p></article>
+        <article class="card reveal"><span class="num">06</span><h3>Urgențe</h3><p>Durere, dinte spart sau infecție: te primim în aceeași zi.</p></article>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="proces">
+      <div class="section-head reveal">
+        <p class="eyebrow">Prima vizită</p>
+        <h2>Cum decurge, pas cu pas</h2>
+      </div>
+      <ol class="steps">
+        <li class="reveal"><b>Programarea</b><p>Alegi ziua și ora online sau ne suni. Durează sub un minut.</p></li>
+        <li class="reveal"><b>Consultația</b><p>Medicul te ascultă, te examinează și îți arată pe ecran ce se întâmplă.</p></li>
+        <li class="reveal"><b>Planul de tratament</b><p>Primești un plan clar, cu prețuri și etape, fără surprize.</p></li>
+      </ol>
+    </section>
+
+    <section class="section" id="preturi">
+      <div class="section-head reveal">
+        <p class="eyebrow">Prețuri</p>
+        <h2>Transparent, de la început</h2>
+      </div>
+      <div class="tabs" id="tabs" role="tablist" aria-label="Categorii de prețuri"></div>
+      <ul class="prices" id="prices" role="tabpanel"></ul>
+      <p class="note">Prețurile sunt orientative. Prețul final îl stabilim după consultație.</p>
+    </section>
+
+    <section class="section section-alt" id="echipa">
+      <div class="section-head reveal">
+        <p class="eyebrow">Echipa</p>
+        <h2>Medicii tăi</h2>
+      </div>
+      <div class="team">
+        <article class="doctor reveal"><div class="avatar">AM</div><h3>Dr. Ana Marinescu</h3><p>Stomatologie generală</p></article>
+        <article class="doctor reveal"><div class="avatar">MS</div><h3>Dr. Mihai Stoica</h3><p>Implantologie și chirurgie</p></article>
+        <article class="doctor reveal"><div class="avatar">CR</div><h3>Dr. Cristina Radu</h3><p>Ortodonție și copii</p></article>
+      </div>
+    </section>
+
+    <section class="section" id="recenzii">
+      <div class="section-head reveal">
+        <p class="eyebrow">Recenzii</p>
+        <h2>Ce spun pacienții</h2>
+      </div>
+      <div class="quotes">
+        <blockquote class="reveal"><p>Mi-a fost frică de dentist toată viața. Aici am plecat zâmbind, fără nicio durere.</p><cite>Elena V.</cite></blockquote>
+        <blockquote class="reveal"><p>Mi-au explicat tot, cu prețuri clare. Nu am avut nicio surpriză la final.</p><cite>Bogdan T.</cite></blockquote>
+        <blockquote class="reveal"><p>Fiica mea de 6 ani a cerut singură să se întoarcă. Mulțumim doamnei doctor!</p><cite>Raluca M.</cite></blockquote>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="programare">
+      <div class="split">
+        <div class="reveal">
+          <p class="eyebrow">Programare online</p>
+          <h2>Alege ziua și ora</h2>
+          <p>Completează formularul și te sunăm pentru confirmare. Orele disponibile se schimbă în funcție de ziua aleasă.</p>
+          <ul class="hours">
+            <li><span>Luni – Vineri</span><b>09:00 – 18:00</b></li>
+            <li><span>Sâmbătă</span><b>09:00 – 13:00</b></li>
+            <li><span>Duminică</span><b>Închis</b></li>
+          </ul>
+        </div>
+        <form class="form reveal" id="booking" novalidate>
+          <label>Nume
+            <input name="name" autocomplete="name" required>
+          </label>
+          <label>Telefon
+            <input name="phone" type="tel" autocomplete="tel" required>
+          </label>
+          <label>Serviciu
+            <select name="service" required>
+              <option value="">Alege</option>
+              <option>Consultație gratuită</option>
+              <option>Control și detartraj</option>
+              <option>Tratament (plombă, canal)</option>
+              <option>Estetică dentară</option>
+              <option>Implant dentar</option>
+              <option>Ortodonție</option>
+              <option>Urgență</option>
+            </select>
+          </label>
+          <div class="row">
+            <label>Data
+              <input name="date" type="date" required>
+            </label>
+            <label>Ora
+              <select name="time" required>
+                <option value="">Alege data</option>
+              </select>
+            </label>
+          </div>
+          <p class="msg" id="msg" role="status"></p>
+          <button class="btn" type="submit">Trimite cererea</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section" id="intrebari">
+      <div class="section-head reveal">
+        <p class="eyebrow">Întrebări frecvente</p>
+        <h2>Ce ne întreabă pacienții</h2>
+      </div>
+      <div class="faq reveal">
+        <details>
+          <summary>Doare tratamentul?</summary>
+          <p>Folosim anestezie modernă și tehnici blânde, așa că majoritatea pacienților nu simt durere. Dacă ți-e teamă, spune-ne și mergem în ritmul tău.</p>
+        </details>
+        <details>
+          <summary>Cât durează prima consultație?</summary>
+          <p>Între 30 și 45 de minute. Include examinarea, radiografia dacă e nevoie și planul de tratament.</p>
+        </details>
+        <details>
+          <summary>Primiți și copii?</summary>
+          <p>Da, de la 3 ani. Avem un medic specializat în stomatologie pediatrică și un cabinet adaptat celor mici.</p>
+        </details>
+        <details>
+          <summary>Pot plăti în rate?</summary>
+          <p>Da, pentru tratamentele mai ample oferim plata în rate fără dobândă. Detaliile le stabilim la consultație.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <span class="logo">Zâmbet<span>Dental</span></span>
+      <p>Strada Exemplu nr. 12, orașul tău</p>
+    </div>
+    <div>
+      <p><a href="tel:+40700000000">0700 000 000</a></p>
+      <p><a href="mailto:salut@zambetdental.ro">salut@zambetdental.ro</a></p>
+    </div>
+    <p>&copy; 2026 Zâmbet Dental</p>
+  </footer>
+
+  <a class="call-fab" href="tel:+40700000000" aria-label="Sună la clinică">Sună</a>
+
+  <script src="script.js"></script>
+</body>
+</html>
